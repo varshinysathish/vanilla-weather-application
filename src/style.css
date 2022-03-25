@@ -3,11 +3,12 @@ body {
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
+  color: #02007c;
+  font-size: 30px;
   font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -26,6 +27,9 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+.dt-desc {
+  color: black;
+}
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -35,11 +39,19 @@ li:first-letter {
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .overview {
   margin-bottom: 20px;
+}
+
+.search-button {
+  border-radius: 30px;
+}
+.submit-button {
+  border-radius: 30px;
+  background: #0900bd;
 }
 
 .weather-temperature img {

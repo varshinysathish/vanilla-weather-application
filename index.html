@@ -24,7 +24,7 @@
                 <input
                   type="search"
                   placeholder="Enter a city..."
-                  class="form-control"
+                  class="form-control search-button"
                   id="city-input"
                   autocomplete="off"
                 />
@@ -33,7 +33,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-primary w-100 submit-button"
                 />
               </div>
             </div>
@@ -41,8 +41,10 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description" class="description"></li>
+              <li class="dt-desc">
+                Last updated: <span class="dt-desc" id="date"></span>
+              </li>
+              <li class="dt-desc" id="description" class="description"></li>
             </ul>
           </div>
           <div class="row">
