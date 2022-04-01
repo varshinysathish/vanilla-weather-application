@@ -12,6 +12,10 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
     <title>Vanilla Weather App</title>
   </head>
   <body>
@@ -38,6 +42,7 @@
               </div>
             </div>
           </form>
+        </br>  
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
@@ -47,6 +52,7 @@
               <li class="dt-desc" id="description" class="description"></li>
             </ul>
           </div>
+        </br>
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
@@ -64,21 +70,36 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>
+                  Humidity:
+                  <span class="humidity-wind"
+                    ><span id="humidity"></span>%</span
+                  >
+                </li>
+                <li>
+                  Wind:
+                  <span class="humidity-wind"
+                    ><span id="wind"></span> km/h</span
+                  >
+                </li>
               </ul>
             </div>
           </div>
+          </br>
           <div class="weather-forecast" id="forecast"></div>
-        </div>
-        <small>
+          </br>
+        <hr class="horizontal-line">
+        <span class="credits">
+          <footer>
           <a
             href="https://github.com/varshinysathish/vanilla-weather-application"
             target="_blank"
             >Open-source code</a
           >
-          by Sathish Kumar Varshiny
-        </small>
+          <span class="credit">by Sathish Kumar Varshiny</span></span>
+          </footer>
+        </br>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
