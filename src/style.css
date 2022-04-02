@@ -56,10 +56,20 @@ li:first-letter {
   border-radius: 30px;
   background: #e7d5d4;
 }
-.submit-button {
-  border-radius: 30px;
+
+button {
+  display: block;
   background: #934662;
+  color: white;
+  font-size: 16px;
+  padding: 7px 14px;
   border: 1px solid rgb(135, 135, 135);
+  border-radius: 30px;
+}
+
+button:hover {
+  background: #7e6d9e;
+  color: white;
 }
 
 .weather-temperature img {
